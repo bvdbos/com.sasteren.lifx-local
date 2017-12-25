@@ -1,0 +1,58 @@
+{
+  "id": "com.sasteren.lifx-local",
+  "version": "2.0.6",
+  "compatibility": ">=1.0.0",
+  "category": "lights",
+  "name": {
+    "en": "LIFX",
+    "nl": "LIFX"
+  },
+  "description": {
+    "en": "This app contains the driver that enables you to control your LIFX Wi-Fi light bulbs",
+    "nl": "Deze app biedt ondersteuning voor het besturen van je LIFX wifi lampen"
+  },
+  "images": {
+    "large": "assets/images/large.jpg",
+    "small": "assets/images/small.jpg"
+  },
+  "author": {
+    "name": "Athom B.V."
+  },
+  "speech": [
+  ],
+  "drivers": [
+    {
+      "id": "lifx",
+      "name": {
+        "en": "LIFX",
+        "nl": "LIFX"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff", "dim", "light_hue", "light_saturation", "light_temperature", "light_mode"
+      ],
+      "images": {
+        "large": "drivers/lifx/assets/images/large.jpg",
+        "small": "drivers/lifx/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "list_bulbs",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_bulbs"
+          }
+        },
+        {
+          "id": "add_bulbs",
+          "template": "add_devices"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "node-lifx": "*"
+  },
+  "flow": {
+  }
+}
