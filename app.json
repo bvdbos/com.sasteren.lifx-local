@@ -9,7 +9,8 @@
   },
   "description": {
     "en": "This app contains the driver that enables you to control your LIFX Wi-Fi light bulbs",
-    "nl": "Deze app biedt ondersteuning voor het besturen van je LIFX wifi lampen"
+    "nl": "Deze app biedt ondersteuning voor het besturen van je LIFX wifi lampen",
+    "de": "Diese App bietet Unterstützung zum Steuern Deiner LIFX Wi-Fi Lampen"
   },
   "images": {
     "large": "assets/images/large.jpg",
@@ -25,7 +26,9 @@
       "id": "lifx",
       "name": {
         "en": "LIFX",
-        "nl": "LIFX"
+        "nl": "LIFX",
+        "de": "LIFX"
+        
       },
       "class": "light",
       "capabilities": [
